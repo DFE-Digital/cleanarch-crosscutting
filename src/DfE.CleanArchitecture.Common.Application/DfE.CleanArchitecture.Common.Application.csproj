@@ -10,8 +10,6 @@
     <PackageDescription>Application contracts for DfE Clean Architecture.</PackageDescription>
     <PackageTags>DfE;CleanArchitecture;Common;Application</PackageTags>
 
-    <PackageReadmeFile>README.md</PackageReadmeFile>
-    <!-- Include the readme in the package if present -->
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
