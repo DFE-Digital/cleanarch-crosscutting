@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+      <PackageId>DfE.CleanArchitecture.Common.CrossCutting</PackageId>
+      <PackageLicenseExpression>MIT</PackageLicenseExpression>
+      
+      <AssemblyName>DfE.CleanArchitecture.Common.CrossCutting</AssemblyName>
+      <RootNamespace>DfE.CleanArchitecture.Common.CrossCutting</RootNamespace>
+
+      <PackageDescription>Cross-cutting contracts for DfE Clean Architecture.</PackageDescription>
+      <PackageTags>DfE;CleanArchitecture;Common;CrossCutting</PackageTags>
+
+      <IncludeSymbols>true</IncludeSymbols>
+      <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    </PropertyGroup>
+
+</Project>

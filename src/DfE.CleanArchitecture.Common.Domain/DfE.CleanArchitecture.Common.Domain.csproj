@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageId>DfE.CleanArchitecture.Common.Domain</PackageId>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+
+    <AssemblyName>DfE.CleanArchitecture.Common.Domain</AssemblyName>
+    <RootNamespace>DfE.CleanArchitecture.Common.Domain</RootNamespace>
+
+    <PackageDescription>Domain contracts for DfE Clean Architecture.</PackageDescription>
+    <PackageTags>DfE;CleanArchitecture;Common;Domain</PackageTags>
+
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+</Project>
