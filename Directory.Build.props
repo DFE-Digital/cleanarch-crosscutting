@@ -1,0 +1,24 @@
+<Project>
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    
+    <!-- Set Language Version across all projects -->
+    <LangVersion>latest</LangVersion>
+
+    <!-- Enable nullable reference types across all projects -->
+    <Nullable>enable</Nullable>
+
+    <!-- Enable implicit usings (or GlobalUsings) across all projects-->
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+
+    <!-- Set common assembly info -->
+    <Authors>Department for Education (DfE)</Authors>
+    <Company>Department for Education (DfE)</Company>
+    <Copyright>Department for Education (DfE)</Copyright>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/DFE-Digital/cleanarch-crosscutting</RepositoryUrl>
+  
+  </PropertyGroup>
+</Project>

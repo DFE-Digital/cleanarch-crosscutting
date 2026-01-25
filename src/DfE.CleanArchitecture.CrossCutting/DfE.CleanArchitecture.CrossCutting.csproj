@@ -1,22 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-      <TargetFramework>net8.0</TargetFramework>
-
-      <ImplicitUsings>enable</ImplicitUsings>
-      <Nullable>enable</Nullable>
-      
       <PackageId>DfE.CleanArchitecture.CrossCutting</PackageId>
       <PackageLicenseExpression>MIT</PackageLicenseExpression>
       
       <AssemblyName>DfE.CleanArchitecture.CrossCutting</AssemblyName>
       <RootNamespace>DfE.CleanArchitecture.CrossCutting</RootNamespace>
 
-      <Authors>DfE Digital</Authors>
       <PackageDescription>Cross-cutting contracts for DfE Clean Architecture.</PackageDescription>
       <PackageTags>DfE;CleanArchitecture;CrossCutting</PackageTags>
-      <RepositoryUrl>https://github.com/DFE-Digital/cleanarch-crosscutting</RepositoryUrl>
-      <RepositoryType>git</RepositoryType>
+
       <PackageReadmeFile>README.md</PackageReadmeFile>
       <!-- Include the readme in the package if present -->
       <IncludeSymbols>true</IncludeSymbols>
