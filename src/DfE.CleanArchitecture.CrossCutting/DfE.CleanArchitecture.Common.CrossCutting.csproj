@@ -1,14 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-      <PackageId>DfE.CleanArchitecture.CrossCutting</PackageId>
+      <PackageId>DfE.CleanArchitecture.Common.CrossCutting</PackageId>
       <PackageLicenseExpression>MIT</PackageLicenseExpression>
       
-      <AssemblyName>DfE.CleanArchitecture.CrossCutting</AssemblyName>
-      <RootNamespace>DfE.CleanArchitecture.CrossCutting</RootNamespace>
+      <AssemblyName>DfE.CleanArchitecture.Common.CrossCutting</AssemblyName>
+      <RootNamespace>DfE.CleanArchitecture.Common.CrossCutting</RootNamespace>
 
       <PackageDescription>Cross-cutting contracts for DfE Clean Architecture.</PackageDescription>
-      <PackageTags>DfE;CleanArchitecture;CrossCutting</PackageTags>
+      <PackageTags>DfE;CleanArchitecture;Common;CrossCutting</PackageTags>
 
       <PackageReadmeFile>README.md</PackageReadmeFile>
       <!-- Include the readme in the package if present -->

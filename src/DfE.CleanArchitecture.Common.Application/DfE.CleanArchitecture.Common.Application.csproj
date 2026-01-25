@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageId>DfE.CleanArchitecture.Common.Application</PackageId>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+
+    <AssemblyName>DfE.CleanArchitecture.Common.Application</AssemblyName>
+    <RootNamespace>DfE.CleanArchitecture.Common.Application</RootNamespace>
+
+    <PackageDescription>Application contracts for DfE Clean Architecture.</PackageDescription>
+    <PackageTags>DfE;CleanArchitecture;Common;Application</PackageTags>
+
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <!-- Include the readme in the package if present -->
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+</Project>
