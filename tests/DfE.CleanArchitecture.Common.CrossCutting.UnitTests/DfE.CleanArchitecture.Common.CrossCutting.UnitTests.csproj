@@ -13,7 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\DfE.CleanArchitecture.Common.Application\DfE.CleanArchitecture.Common.Application.csproj" />
     <ProjectReference Include="..\..\src\DfE.CleanArchitecture.CrossCutting\DfE.CleanArchitecture.Common.CrossCutting.csproj" />
   </ItemGroup>
 
