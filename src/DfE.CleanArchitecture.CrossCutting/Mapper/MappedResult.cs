@@ -3,7 +3,7 @@ public record MappedResult<TResult> : IMappedResult<TResult>
 {
     private readonly string _errorMessage;
 
-    private MappedResult(MappingResultStatus status, TResult? result, Exception? ex = null)
+    internal MappedResult(MappingResultStatus status, TResult? result, Exception? ex = null)
     {
         if (status is MappingResultStatus.Successful && ex is not null)
         {
@@ -16,7 +16,7 @@ public record MappedResult<TResult> : IMappedResult<TResult>
         _errorMessage = ex?.Message ?? string.Empty;
     }
 
-    private MappedResult(MappingResultStatus status, TResult? result, string? errorMessage)
+    internal MappedResult(MappingResultStatus status, TResult? result, string? errorMessage)
     {
         if (status is MappingResultStatus.Successful && !string.IsNullOrWhiteSpace(errorMessage))
         {
