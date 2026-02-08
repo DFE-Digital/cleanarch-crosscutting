@@ -18,3 +18,10 @@ public interface IUseCase<in TUseCaseRequest, TUseCaseResponse>
     /// <returns>The output response object.</returns>
     Task<TUseCaseResponse> HandleRequestAsync(TUseCaseRequest request);
 }
+
+public interface IGenericUseCase<in TUseCaseRequest, TUseCaseResponse>
+    where TUseCaseRequest : IUseCaseRequest
+    where TUseCaseResponse : class
+{
+    Task<TUseCaseResponse> HandleRequestAsync(TUseCaseRequest request);
+}
