@@ -19,7 +19,7 @@ public interface IUseCase<in TUseCaseRequest, TUseCaseResponse>
     Task<TUseCaseResponse> HandleRequestAsync(TUseCaseRequest request);
 }
 
-public interface IGenericUseCase<in TUseCaseRequest, TUseCaseResponse>
+public interface IUseCaseGeneric<in TUseCaseRequest, TUseCaseResponse>
     where TUseCaseRequest : IUseCaseRequest
     where TUseCaseResponse : class
 {
