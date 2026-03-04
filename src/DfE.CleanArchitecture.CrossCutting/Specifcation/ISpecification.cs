@@ -1,8 +1,8 @@
 ﻿using System.Linq.Expressions;
 
-namespace DfE.CleanArchitecture.Common.CrossCutting.Specifcation;
-public interface ISpecification<T>
+namespace DfE.CleanArchitecture.Common.CrossCutting.Specification;
+public interface ISpecification<TInput>
 {
-    Expression<Func<T, bool>> ToExpression();
-    bool IsSatisfiedBy(T input);
+    Expression<Func<TInput, bool>> ToExpression();
+    bool IsSatisfiedBy(TInput input);
 }

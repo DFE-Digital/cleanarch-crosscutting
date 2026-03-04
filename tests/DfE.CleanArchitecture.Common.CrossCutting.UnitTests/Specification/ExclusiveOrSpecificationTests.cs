@@ -1,0 +1,61 @@
+﻿using System.Linq.Expressions;
+using DfE.CleanArchitecture.Common.CrossCutting.Specification;
+using DfE.CleanArchitecture.Common.CrossCutting.UnitTests.Specification.TestDoubles;
+
+namespace DfE.CleanArchitecture.Common.CrossCutting.UnitTests.Specification;
+
+public sealed class ExclusiveOrSpecificationTests
+{
+    [Fact]
+    public void Constructor_ShouldThrow_WhenLeftIsNull()
+    {
+        ISpecification<int> right = SpecificationTestDoubles.Fake<int>(true);
+
+        Assert.Throws<ArgumentNullException>(
+            () => new ExclusiveOrSpecification<int>(null!, right)
+        );
+    }
+
+    [Fact]
+    public void Constructor_ShouldThrow_WhenRightIsNull()
+    {
+        ISpecification<int> left = SpecificationTestDoubles.Fake<int>(true);
+
+        Assert.Throws<ArgumentNullException>(
+            () => new ExclusiveOrSpecification<int>(left, null!)
+        );
+    }
+
+    [Theory]
+    [InlineData(true, true, false)]
+    [InlineData(true, false, true)]
+    [InlineData(false, true, true)]
+    [InlineData(false, false, false)]
+    public void IsSatisfiedBy_ShouldReturnExpected(bool leftVal, bool rightVal, bool expected)
+    {
+        ISpecification<int> left = SpecificationTestDoubles.Fake<int>(leftVal);
+        ISpecification<int> right = SpecificationTestDoubles.Fake<int>(rightVal);
+        ExclusiveOrSpecification<int> spec = new ExclusiveOrSpecification<int>(left, right);
+
+        bool result = spec.IsSatisfiedBy(42);
+
+        Assert.Equal(expected, result);
+    }
+
+    [Theory]
+    [InlineData(true, true, false)]
+    [InlineData(true, false, true)]
+    [InlineData(false, true, true)]
+    [InlineData(false, false, false)]
+    public void ToExpression_ShouldMatchIsSatisfiedBy(bool leftVal, bool rightVal, bool expected)
+    {
+        ISpecification<int> left = SpecificationTestDoubles.Fake<int>(leftVal);
+        ISpecification<int> right = SpecificationTestDoubles.Fake<int>(rightVal);
+        ExclusiveOrSpecification<int> spec = new ExclusiveOrSpecification<int>(left, right);
+
+        Expression<Func<int, bool>> expr = spec.ToExpression();
+        bool compiled = expr.Compile()(42);
+
+        Assert.Equal(expected, compiled);
+    }
+}

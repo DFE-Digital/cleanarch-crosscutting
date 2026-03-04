@@ -16,7 +16,7 @@
     </PropertyGroup>
 
   <ItemGroup>
-    <InternalsVisibleTo Include="DfE.CleanArchitecture.Common.CrossCutting.UnitTests"/>
+    <InternalsVisibleTo Include="DfE.CleanArchitecture.Common.CrossCutting.UnitTests" />
   </ItemGroup>
 
 </Project>
