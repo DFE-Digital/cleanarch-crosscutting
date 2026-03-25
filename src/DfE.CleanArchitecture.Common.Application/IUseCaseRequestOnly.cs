@@ -13,5 +13,5 @@ public partial interface IUseCaseRequestOnly<in TUseCaseRequest>
     /// Handles the request without returning a response.
     /// </summary>
     /// <param name="request">The input request.</param>
-    Task HandleRequestAsync(TUseCaseRequest request);
+    Task HandleRequestAsync(TUseCaseRequest request, CancellationToken cancellationToken = default);
 }

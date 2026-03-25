@@ -16,5 +16,5 @@ public interface IUseCase<in TUseCaseRequest, TUseCaseResponse>
     /// </summary>
     /// <param name="request">The input request.</param>
     /// <returns>The output response object.</returns>
-    Task<TUseCaseResponse> HandleRequestAsync(TUseCaseRequest request);
+    Task<TUseCaseResponse> HandleRequestAsync(TUseCaseRequest request, CancellationToken cancellationToken = default);
 }
